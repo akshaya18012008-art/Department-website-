@@ -1,0 +1,167 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7ff;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #101f50, #2563eb);
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 15px;
+}
+
+/* Navigation */
+nav {
+    background: #0f172a;
+    padding: 16px 8px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #93c5fd;
+}
+
+/* Home section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #dbeafe, #eef2ff);
+}
+
+.hero h2 {
+    font-size: 32px;
+    color: #142d5c;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.hero button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background: #142d5c;
+}
+
+/* General sections */
+section {
+    padding: 45px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #142d5c;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    max-width: 650px;
+    margin: auto;
+}
+
+/* Course cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.card {
+    background: white;
+    width: 260px;
+    padding: 28px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(30, 64, 175, 0.12);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.card h3 {
+    color: #2563eb;
+    margin-bottom: 12px;
+}
+
+/* Contact */
+#contact {
+    background: #e8efff;
+}
+
+/* Footer */
+footer {
+    background: #101f50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Mobile screen */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .hero {
+        padding: 55px 15px;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
